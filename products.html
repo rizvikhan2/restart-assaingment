@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Products</title>
+  <!-- font -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow mb-10">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between">
+    <a href="index.html" class="text-2xl font-bold text-indigo-600">SwiftCart</a>
+   <a href="cart.html" class="bg-indigo-600 text-white px-4 py-2 rounded-md relative">
+  🛒 Cart
+  <span id="cart-count"
+        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+    0
+  </span>
+</a>
+  </div>
+</nav>
+
+<div class="max-w-6xl mx-auto px-4">
+
+  <h2 class="text-3xl font-bold mb-6 text-center">
+    Our Products
+  </h2>
+
+  <!-- Category Buttons -->
+  <div class="flex flex-wrap justify-center gap-3 mb-10">
+    <button onclick="loadProducts()"
+            class="bg-indigo-600 text-white px-4 py-2 rounded">
+      All
+    </button>
+
+    <button onclick="filterCategory('electronics')"
+            class="bg-gray-200 px-4 py-2 rounded">
+      Electronics
+    </button>
+
+    <button onclick="filterCategory('jewelery')"
+            class="bg-gray-200 px-4 py-2 rounded">
+      Jewelry
+    </button>
+
+    <button onclick="filterCategory(`men's clothing`)"
+            class="bg-gray-200 px-4 py-2 rounded">
+      Men's
+    </button>
+
+    <button onclick="filterCategory(`women's clothing`)"
+            class="bg-gray-200 px-4 py-2 rounded">
+      Women's
+    </button>
+  </div>
+
+  <!-- Products Grid -->
+  <div id="all-products"
+       class="grid grid-cols-1 md:grid-cols-4 gap-6">
+  </div>
+
+</div>
+
+<!-- JS FILE LINK -->
+<script src="products.js"></script>
+
+</body>
+</html>

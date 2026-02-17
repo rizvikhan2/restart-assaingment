@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart</title>
+    <!-- daysiUi and tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+
+  <body>
+    <header class="bg-base-100">
+      <!-- navbar start -->
+      <nav class="bg-white shadow">
+        <div
+          class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+        >
+          <h1 class="text-2xl font-bold text-indigo-600">SwiftCart</h1>
+
+          <div class="space-x-6 hidden md:flex">
+            <a href="index.html" class="text-indigo-600 font-semibold">Home</a>
+            <a href="products.html" class="hover:text-indigo-600">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <a href="cart.html"
+            class="bg-indigo-600 text-white px-4 py-2 rounded-md relative"
+          >
+            🛒 Cart
+            <span
+              id="cart-count"
+              class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full"
+            >
+              0
+            </span>
+          </a>
+        </div>
+      </nav>
+      <!-- navbar end -->
+    </header>
+
+    
+
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
